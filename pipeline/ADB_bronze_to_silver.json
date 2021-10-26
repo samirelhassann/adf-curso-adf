@@ -1,0 +1,36 @@
+{
+	"name": "ADB_bronze_to_silver",
+	"properties": {
+		"activities": [
+			{
+				"name": "execute_transformation",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Shared/data-transform/data-transform"
+				},
+				"linkedServiceName": {
+					"referenceName": "ls_databricks",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"parameters": {
+			"p_data": {
+				"type": "string",
+				"defaultValue": "20211022"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2021-10-26T01:45:16Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

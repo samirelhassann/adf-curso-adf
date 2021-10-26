@@ -1,0 +1,9 @@
+{
+	"name": "adf-study-shassan",
+	"location": "brazilsouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "1d43bf30-3d10-490f-b1d9-cfeeed169041",
+		"tenantId": "bd219a8b-954c-49f7-8da8-e9ec9bfdfc80"
+	}
+}
